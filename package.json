@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/ && esbuild index.tsx --bundle --outfile=dist/index.js --loader:.tsx=tsx --external:react --external:react-dom/client && sed -i 's|./index.tsx|./index.js|' dist/index.html"
+    "build": "mkdir -p dist && cp index.html dist/ && esbuild index.tsx --bundle --outfile=dist/index.js --loader:.tsx=tsx --format=esm --minify && sed -i 's|./index.tsx|./index.js|' dist/index.html"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
     "esbuild": "^0.20.2"
   }
 }
