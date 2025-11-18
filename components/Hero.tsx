@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
     <section className="relative h-[80vh] min-h-[500px] flex items-center justify-center text-center text-white overflow-hidden">
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url('https://picsum.photos/seed/ai-chip/1920/1080')` }}
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1550745165-9bc0b252726a?q=80&w=1920&auto=format&fit=crop')` }}
       />
       <div className="absolute top-0 left-0 w-full h-full bg-black/70 backdrop-brightness-50"></div>
 
